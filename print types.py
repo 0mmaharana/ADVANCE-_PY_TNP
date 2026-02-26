@@ -1,0 +1,5 @@
+print("x contains",10, end=' ')
+print("y contains",20, end=' ')
+print("z contains",30, end=' ')
+print ("x contains {}, y contains {}, z contains {}".format(10,20,30))
+print("x=",10,"y=",20,"z=",30)

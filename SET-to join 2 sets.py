@@ -1,0 +1,13 @@
+# to join 2 sets
+s1={'a','b','c'}
+s2={1,2,3}
+s3=s1.union(s2)
+print(s1)
+print(s2)
+print(s3)
+
+# using update() method:
+s1={'a','b','c'}
+s2={1,2,3}
+s1.update(s2)
+print(s1)

@@ -1,0 +1,60 @@
+# class employee:
+#     def _init_(self,name,salary):
+#         self.name=name
+#         self.salary=salary
+#         employee.count +=1
+#     def displaycount(self):
+#         print("total employee ",employee.count)
+#     def display(self):
+#         print(self.name,self.salary) 
+
+# x=employee("om",354646)
+# y=employee("abhi",46363)
+# x.display()
+# x.displaycount()
+# y.display()
+# y.displaycount()
+#ex2
+# class point:
+#     def __init__(self,x=1,y=2):
+#         self.x=x
+#         self.y=y
+#         print("created")
+#     def __del__(self):
+#         print(point,"destroyed")
+# p1=point()
+# print(p1.x,p1.y)
+# del p1
+#ex3
+class parentclass:
+     def __init__(self,id,name):
+        self.id=id
+        self.name=name
+     def par_show(self):
+        print(self.id,self.name)
+class childclass:
+     def __init__(self,id,name,age,marks):
+        self.id=id
+        self.name=name
+        self.age=age
+        self.marks=marks
+     def chi_show(self):
+        print(self.id,self.name,self.age,self.marks)
+    try:
+    x=int(input("Enter 1st no. "))
+    y=int(input("Enter 2nd no. "))
+    print(x/y)
+except ZeroDivisionError:
+    print("2nd no. is 0")
+try:
+    fileptr=("file7.text","r")
+
+except IOError:
+    print("file not found")
+else:
+    print("file opened")
+    fileptr.close()
+    print("File closed")
+finally:
+    print("It is just final statement")
+    print("----end----")
